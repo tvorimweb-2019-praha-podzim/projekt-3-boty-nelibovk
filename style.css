@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 body {
     text-rendering: optimizeLegibility;
@@ -21,3 +27,126 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+html {
+    height: 440px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zaruka {
+    font-size: 12px;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.velikosti {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.parametr {
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.produkt {
+    color: gray;
+}
+
+li {
+    margin: 10px;
+    padding: 3px;
+}
+
+.vybrana {
+    color: tomato;
+    border: 1px solid tomato;
+    border-radius: 100%;
+}
+
+.akce {
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: tomato;
+    border-radius: 5px;
+    margin-top: 90px;
+}
+
+.tlacitko {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16;
+}
+
+.zbozi {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 440px;
+}
+
+.detaily {
+    width: 335px;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: whitesmoke;
+    height: 440px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 7px 7px 23px -3px rgba(0, 0, 0, 0.507);
+}
+
+.vizual {
+    width: 335px;
+    background-image: linear-gradient(#06d7c1, #50cc49);
+    height: 440px;
+    color: whitesmoke;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 7px 7px 23px -3px rgba(0, 0, 0, 0.507);
+    padding: 30px;
+}
+
+.bota {
+    position: relative;
+    right: 120px;
+    top: -15px;
+}
+
+.cenovka {
+    text-align: right;
+    position: relative;
+    bottom: 95px;
+}
+
+.popis {
+    margin: 0 0 30px 0;
+}
+
+hr {
+    border: 0.5px solid #06d7c1;
+}
